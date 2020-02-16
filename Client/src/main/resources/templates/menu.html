@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Meny</h1>
+    	<form action="#" th:action="@{/add}" th:object="${calculator}" method="post">
+        <p>Lägg till namn: <input type="text" th:field="*{input}" /></p>
+        <p>Lägg till yrke: <input type="text" th:field="*{input2}" /></p>
+        <p><input type="submit" value="Lägg till" /> </p>
+    </form>
+        <form action="#" th:action="@{/delete}" th:object="${calculator}" method="post">
+        <p>Ta bort id: <input type="text" th:field="*{input2}" /></p>
+        <p><input type="submit" value="Ta bort" /> </p>
+    </form>
+        <form action="#" th:action="@{/users}" th:object="${calculator}" method="post">
+        <p><input type="hidden" th:field="*{input3}" /></p>
+        <p><input type="submit" value="Lista alla" /> </p>
+    </form>
+</body>
+</html>

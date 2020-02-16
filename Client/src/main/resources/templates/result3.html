@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Lista</h1>
+<p data-th-utext="${#strings.replace(#strings.escapeXml(calculator.output3),'&#10;','&lt;br&gt;')}"></p>
+    <a href="/users">Tillbaka till formuläret</a>
+</body>
+</html>
